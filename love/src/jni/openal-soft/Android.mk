@@ -30,7 +30,7 @@ else ifeq ($(TARGET_ARCH_ABI),x86)
 		-DHAVE_SSE3 \
 		-DSIZEOF_LONG=4 \
 		-DHAVE_CPUID_H \
-		-DHAVE_GCC_GET_CPUID \
+		-DHAVE_GCC_GET_CPUID
 else ifeq ($(TARGET_ARCH_ABI),x86_64)
 	# Defines for x86-64. UNTESTED!
 	LOCAL_CFLAGS += \
